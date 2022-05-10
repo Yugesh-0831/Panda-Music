@@ -95,7 +95,7 @@ dispatch({
     <div className="app">
    {
      token ? (
-       <Home spotify={spotify} accesstoken={_token}/>
+       <Player spotify={spotify} accesstoken={_token}/>
      ) : (
       <Login />
      )
