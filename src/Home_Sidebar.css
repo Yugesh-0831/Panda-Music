@@ -1,0 +1,35 @@
+.homeSidebar{
+    flex:0.15;
+    color:black;
+}
+
+hr {
+    background-color:black; 
+    height: 1px; 
+    border: 0;
+    width:70%;
+    margin-left: 20px;
+
+}
+
+.avatar{
+display:flex;
+align-items: center;
+margin: 20px;
+}
+
+.avatar >p{
+    padding-left: 10px;
+}
+
+.sidebar_title{
+    color:black;
+    margin: 20px 20px 10px;
+
+}
+
+.theme{
+    display:flex;
+    align-items: center;
+    margin-top: 30px;
+}

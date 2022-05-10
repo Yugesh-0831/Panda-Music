@@ -1,0 +1,31 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+.header_left{
+    flex:0.6;
+    min-width: 70px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    display: flex;
+    align-items:center;
+
+}
+
+.header_left > input{
+border: none;
+width: 90%;
+}
+
+.header_right{
+    display:flex;
+    align-items: center;
+}
+
+.header_right > h4{
+    margin-left :10px;
+}

@@ -1,0 +1,24 @@
+.sidebarOption{
+    display:flex;
+    color:black;
+    height:40px;
+    cursor:pointer;
+transition: 200ms color ease-in;
+align-items: center;
+margin-left: 10px;
+
+}
+
+
+
+.sidebarOption_icon{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebarOption>p{
+    font-size:14px;
+    margin-left: 18px;
+}
+
+
