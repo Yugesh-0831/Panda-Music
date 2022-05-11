@@ -14,9 +14,10 @@
 
 .top_artists_info > img{
     height:18vh;
-    width:10vw;
-    border-radius: 5px;
-    margin: 10px 12px;
+    width:9.7vw;
+    /* border-radius: 5px; */
+    margin: 10px 4px;
+    padding-left: 10px;
 }
 
 .top_artists_info > p{

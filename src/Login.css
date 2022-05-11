@@ -1,20 +1,32 @@
+
+
 .login{
+
+    width:100vw;
+   height: 100vh;
     display:grid;
     place-items:center;
-    background-color: black;
-    height:100vh;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFydHl8ZW58MHx8MHx8&w=1000&q=80);
+    width:100vw;
+    background-size: cover;
+    
+   /* position:fixed; */
 }
 
-img{
-    width:100%;
-
+.login >img{
+    width:300px;
+    margin-top:70px;
 }
+
+
 
 .login > a {
     padding:20px;
+    margin-bottom: 250px;
     border-radius: 99px;
-    background-color: #1DB954;
-    font-weight:800px;
+    background-color: #db77ce;
+    font-weight:700px;
     text-decoration: none;
     color:white;
 }
+

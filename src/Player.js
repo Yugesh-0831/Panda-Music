@@ -2,7 +2,7 @@ import React from 'react';
 import "./Player.css";
 import Sidebar from "./Sidebar";
 import Body from './Body';
-import Footer from './Footer';
+import Home_Footer from './Home_Footer';
 import Home_Sidebar from './Home_Sidebar';
 
 function Player({ spotify },{accesstoken}){
@@ -15,7 +15,7 @@ function Player({ spotify },{accesstoken}){
                 <Body spotify={spotify}/>
                     </div>
                <div className="homeBottom">
-               <Footer spotify={spotify}/>
+               <Home_Footer spotify={spotify}/>
                </div>
             </div>
         </div>
