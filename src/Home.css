@@ -1,24 +1,83 @@
+
 .home{
-    background-color: #09c7fb;
-    background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+   
 height: 100%;
 width: 100%;
 position: fixed;
+display:flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+#light .home{
+    background-color: #09c7fb;
+    background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+    
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6UuTEbEK1xk5ly3RvQHDwctRrmEvGbg1XnA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover; */
+} 
+
+#dark .home{
+    background-color: #523a78;
+    background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
 }
 
 .homeGlass{
-margin-top: 40px;
-margin-left: 40px;
-height:91vh;
-width:94%;
-background: rgba(255,255,255,0.25);
-box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+background: white;
+height:87vh;
+width:87%;
+/* background: rgba(255,255,255,0.25); */
+/* box-shadow: 10px 20px 20px rgba(0,0,0,0.5); */
 overflow-y: overlay;
+background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* border-radius: 1rem; */
+
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 1%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 7%;
+  left: 10%;
+}
+
+
+.homeGlass::-webkit-scrollbar {
+    display: none; 
 }
 
 .homeTop{
     display:flex;
     overflow-y: overlay;
+    z-index: 1;
+    position: relative;
+}
+
+.homeBottom{
+    z-index: 2;
+    position: relative;
 }
 
 

@@ -5,8 +5,9 @@
     height: 100vh;
     color:black;
     overflow-y: overlay;
-    padding:30px;
+    padding:0px 20px;
 }
+
 
  .body::-webkit-scrollbar{
      display: none;

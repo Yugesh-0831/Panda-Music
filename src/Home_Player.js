@@ -6,9 +6,11 @@ import Header from './Header';
 import SongRow2 from './SongRow2';
 import Top_artists from './Top_artists';
 
-function Home_Player({spotify}){
+function Home_Player({spotify,token}){
 
     const [{ top_artists,recently_played }, dispatch] = useDataLayerValue();
+
+    // console.log({top_artists});
 
     const playArtist = (uri) => {
         spotify
@@ -52,11 +54,14 @@ function Home_Player({spotify}){
         return (
 
             <div className="artists" >
-              <Header spotify={spotify} />
+              <div className="head">
+              <Header spotify={spotify} token={token}/>
+              </div>
+              <div className="middle">
                 <h1>Top Artists</h1>
              
     <div className="top_artists">{top_artists?.items.filter((item, idx) => idx < 6).map((item) => (
-          <Top_artists playSong={playSong} item={item} />
+          <Top_artists index="idx" spotify={spotify} playArtist={playArtist} item={item} />
           ))}</div>
                 <div className="recently_played">
                 <h1>Recently Played</h1>
@@ -66,6 +71,7 @@ function Home_Player({spotify}){
         {recently_played?.items.filter((item, idx) => idx < 10).map((item) => (
     <SongRow2 playSong={playSong} track={item.track} />
     ))}
+    </div>
                 
                 </div>
               </div>

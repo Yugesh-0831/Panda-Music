@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Sidebar.css';
+import './Home_Sidebar.css';
 import SidebarOption from "./SidebarOption";
 import HomeIcon from "@material-ui/icons/Home";
 import SearchIcon from "@material-ui/icons/Search";
@@ -12,7 +12,7 @@ function Sidebar(){
 
     return (
     <div className="sidebar">
- <img className="sidebar_logo" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"></img>
+ <img className="sidebar_logo" src=""></img>
 
  <SidebarOption Icon={HomeIcon} title="Home" />
       <SidebarOption Icon={SearchIcon} title="Search" />

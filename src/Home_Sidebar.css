@@ -1,6 +1,14 @@
 .homeSidebar{
     flex:0.15;
     color:black;
+    /* height: 100vh;
+    border-right: 1px solid ; */
+}
+
+.homeSidebar > img{
+    width:160px;
+    height:160px;
+    padding-left: 15px;
 }
 
 hr {
@@ -9,7 +17,7 @@ hr {
     border: 0;
     width:70%;
     margin-left: 20px;
-
+    margin-bottom: 5px;
 }
 
 .avatar{
@@ -24,12 +32,29 @@ margin: 20px;
 
 .sidebar_title{
     color:black;
-    margin: 20px 20px 10px;
-
+    margin: 20px 25px 10px;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .theme{
     display:flex;
     align-items: center;
     margin-top: 30px;
+}
+
+.options{
+    display:flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.options:hover{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0.2)
+      );
+      border-radius: 10px;
+      margin-left: 5px;
 }

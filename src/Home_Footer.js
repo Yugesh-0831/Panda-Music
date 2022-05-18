@@ -97,7 +97,7 @@ function Home_Footer({spotify}){
             {item ? (
                  <div className="footer_songInfo">
                    <p>{item.name}</p>
-                   {/* <p>{item.artists.map((artist) => artist.name).join(", ")}</p> */}
+                   <p>{item.artists.map((artist) => artist.name).join(", ")}</p>
                  </div>
                ) : (
                  <div className="footer_songInfo">

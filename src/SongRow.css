@@ -8,6 +8,12 @@
 
 .SongRow:hover{
     cursor:pointer;
+    background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 5px;
 }
 
 .SongRow_info{

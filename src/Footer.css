@@ -4,14 +4,25 @@ display:flex;
 justify-content: space-between;
 bottom:0;
 height:50px;
-width:91.2%;
+width:84.2%;
 padding:20px;
-background-color: #09c7fb;
-background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
-box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-margin-bottom: 34px;
 
+margin-bottom: 50px;
+/* border-radius: 0rem 0rem 1rem 1rem; */
 }
+
+#light .footer{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background-color: #09c7fb;
+    background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+}
+
+#dark .footer{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background-color: #523a78;
+    background-image: linear-gradient(316deg, #523a78 0%, #ee696b 74%);
+}
+
 
 .footer_left{
     flex:0.3;

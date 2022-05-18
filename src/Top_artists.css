@@ -1,0 +1,44 @@
+.hide{
+    display: none;
+    padding-left: 130px;
+    margin-top: -40px;
+    margin-right: 5px;
+    color:rgb(29, 228, 128);
+}
+
+.hide :hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+/* .top_artists_info >p{
+
+} */
+
+.top_artists_info:hover .hide {
+    display:block;
+    
+  }
+
+
+  .top_artists_info:hover {
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.5);
+    transition: 1000ms ;
+    transform: scale(1.05);
+    width: 11.1vw;
+    border-radius: 10px;
+    /* height:22vh; */
+  }
+  
+  .top_artists_info > img{
+    height:18vh;
+    width:9.3vw;
+    /* border-radius: 5px; */
+    margin: 10px 4px;
+    padding-left: 10px;
+}
+
+.top_artists_info > p{
+  padding-left: 20px;
+  font-size: 13px ;
+}

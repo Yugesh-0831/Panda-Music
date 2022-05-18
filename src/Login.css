@@ -1,32 +1,88 @@
-
-
-.login{
-
-    width:100vw;
-   height: 100vh;
-    display:grid;
-    place-items:center;
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFydHl8ZW58MHx8MHx8&w=1000&q=80);
-    width:100vw;
-    background-size: cover;
+/* *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+body{
+    background-color: #080710;
+}
+.background{
     
-   /* position:fixed; */
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 470px;
+    width: 350px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px ;
+    padding: 50px 30px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
 }
 
-.login >img{
-    width:300px;
-    margin-top:70px;
+form img{
+    height:34vh;
+    width: 19vw;
+    padding-left: 30px;
+    
+}
+button{
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 90%;
+    background-color: #22e4da;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    cursor: pointer;
+    
 }
 
-
-
-.login > a {
-    padding:20px;
-    margin-bottom: 250px;
-    border-radius: 99px;
-    background-color: #db77ce;
-    font-weight:700px;
-    text-decoration: none;
-    color:white;
+button:hover{
+    transform : scale(1.02);
+    transition: 500ms ;
 }
-
